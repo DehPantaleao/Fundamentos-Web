@@ -3,7 +3,7 @@ span {
     color: blueviolet;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&family=Nunito+Sans&display=swap');
 
 :root {
     --background-page: #FFF9E7;
@@ -32,9 +32,10 @@ span {
 }
 
 body{
-    font-family: var(--noto_sans-cursivo);
-    color: var(--cor-fonte-padrao);
-    background-color: var(--background-page);
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #bf80ff;
+    background-color: white;
  }
  
  p {
