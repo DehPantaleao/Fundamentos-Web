@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,70 @@
     <title>Contatos</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    
-    <ul>
-        <li>
-        <a href="index.html">HOME</a>
-        </li>
 
-        <li>
-            <a href="contato.html">CONTATO</a>
-        </li>
+<body>
+
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
     </ul>
 
-    <h1>Entre em contato</h1>
+    <main id="contato">
+        <section id="formulario_mensagem">
+            <h3>Contato</h2>
+                <form>
+                    <div class="campos-form">
+                        <label for="nome">Nome:</label>
+                        <input onkeyup="validarNome()" id="nome" name="nome" type="text"
+                            placeholder="Insira o seu nome completo">
+                        <div id="txtNome"></div>
+                    </div>
 
-    <form>
-        <label for="nome">Nome</label><br>
-        <input type="text" id="nome"> 
-        <br>
-        <br>
-        <label for="email">Email</label><br>
-        <input type="email" id="email">
-        <br>
-        <br>
-        <label for="assunto">Assunto</label> <br>
-        <textarea name="assunto" id="assunto" cols="80" rows="10"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+                    <div class="campos-form">
+                        <label for="email">E-mail:</label>
+                        <input onkeyup="validarEmail2()" id="email" name="email" type="text"
+                            placeholder="Insira o seu e-mail">
+                        <div id="txtEmail"></div>
+                    </div>
 
-    <h2>Endereço</h2>
+                    <div class="campos-form">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea onkeyup="validarMensagem()" id="mensagem" name="mensagem" rows="8"
+                            placeholder="Deixe sua mensagem..."></textarea>
+                        <div id="txtMensagem"></div>
+                    </div>
 
-    <p>Meu lugar favorito para passear:</p>
-    <p>Parque Recreativo Ceret</p>
+                    <button type="button" onclick="enviarForm()">
+                        Enviar
+                    </button>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.281221700937!2d-46.5564876!3d-23.558341300000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e802fcb4339%3A0x9abe00ac4133a5f4!2sClube%20Recreativo%20CERET!5e0!3m2!1spt-BR!2sbr!4v1686488768856!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </form>
+        </section>
+
+        <section id="formulario_buscacep">
+            <h3>Consultar CEP</h3>
+            <div class="endereco">
+                <div class="campos-form">
+                    <label for="cep">CEP:</label>
+                    <input onkeyup="validarCep()" id="cep" name="cep" type="text" placeholder="Digite o número do CEP">
+                    <div id="txtCep"></div>
+                </div>
+                <button type="button" onclick="consultarCep()">
+                    Consultar
+                </button>
+                <hr>
+                <div class="campos-form">
+                    <label for="dados">Endereço:</label>
+                    <textarea id="dados" name="dados" rows="7" placeholder="Busca CEP..."></textarea>
+                    <div id="txtCep"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
