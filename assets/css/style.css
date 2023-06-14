@@ -3,12 +3,12 @@ span {
     color: blueviolet;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200&family=Nunito+Sans&display=swap');
 
 :root {
-    --background-page: #FFF9E7;
-    --background-nav: #3A53E3;
-    --background-sobre: #F8CD53;
+    --background-page: #e6dfcc;
+    --background-nav: #8594eb;
+    --background-sobre: #d58bf7;
     --background-footer: #29282B;
 
     --cor-fonte-padrao: #000000;
@@ -21,7 +21,7 @@ span {
 
     --cor-sombra: #C0C0C0;
     --cor-sombra-hover: #191970;
-    --cor-button-hover: #191970;
+    --cor-button-hover: #5d5db6;
     --cor-placeholder-effect: #191970;
 }
 
@@ -32,9 +32,10 @@ span {
 }
 
 body{
-    font-family: var(--noto_sans-cursivo);
-    color: var(--cor-fonte-padrao);
-    background-color: var(--background-page);
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #111111;
+    background-color: white;
  }
  
  p {
@@ -85,10 +86,10 @@ body{
      width: 80vw;
      display: flex;
      justify-content: space-between;
-     background-color: var(--background-nav);
+     background-color: #3A53E3;
      box-shadow: 2px 2px 5px var(--gray);
      font-size: 1.5rem;
-     color: var(--cor-fonte-nav);
+     color: #000000;
      padding: 2.25rem 1.5rem;
  }
  
@@ -170,7 +171,7 @@ body{
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     background-color: var(--background-footer);
+     background-color: #2a2a2b;
  }
  
   .redes_sociais {
@@ -190,8 +191,10 @@ body{
      display: flex;
      padding-top: 0.75rem;
      font-size: 1.25rem;
-     color: var(--cor-fonte-by);
+     color: #3A53E3;
  }
+
+ 
  
  /*Página de Contato*/
  
